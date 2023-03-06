@@ -1,22 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Quare } from './quare/quare'
+import { initialData } from './initial-data'; 
 
 function App() {
+  //const data = initialData;
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Quare />
+          {/* {state.blockOrder.map(blockId => {
+            const block = state.block[blockId];
+            const quares = block.quareIds.map(quareId => state.quares[quareId]);
+
+            return <div>{ block.title }</div>
+          })
+        } */}
       </header>
     </div>
   );
